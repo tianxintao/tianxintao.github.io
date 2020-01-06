@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70242973.chunk.css",
+    "main.js": "/static/js/main.1c6078dd.chunk.js",
+    "main.js.map": "/static/js/main.1c6078dd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.31e91247.js",
+    "runtime-main.js.map": "/static/js/runtime-main.31e91247.js.map",
+    "static/css/2.559fd73f.chunk.css": "/static/css/2.559fd73f.chunk.css",
+    "static/js/2.229a717d.chunk.js": "/static/js/2.229a717d.chunk.js",
+    "static/js/2.229a717d.chunk.js.map": "/static/js/2.229a717d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8be3eb89c4d45b213fe8f2b257e74e5e.js": "/precache-manifest.8be3eb89c4d45b213fe8f2b257e74e5e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.559fd73f.chunk.css.map": "/static/css/2.559fd73f.chunk.css.map",
+    "static/css/main.70242973.chunk.css.map": "/static/css/main.70242973.chunk.css.map",
+    "static/js/2.229a717d.chunk.js.LICENSE": "/static/js/2.229a717d.chunk.js.LICENSE",
+    "static/media/ICORR_19.png": "/static/media/ICORR_19.08ca9363.png",
+    "static/media/ICORR_19.pdf": "/static/media/ICORR_19.2d5b3a5f.pdf",
+    "static/media/Resume_TianxinTao.pdf": "/static/media/Resume_TianxinTao.9fc0a3e1.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.31e91247.js",
+    "static/css/2.559fd73f.chunk.css",
+    "static/js/2.229a717d.chunk.js",
+    "static/css/main.70242973.chunk.css",
+    "static/js/main.1c6078dd.chunk.js"
+  ]
+}
