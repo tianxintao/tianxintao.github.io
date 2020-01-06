@@ -36,9 +36,9 @@ class project extends Component {
   render() {
     this.renderProjectCard();
     return (
-      <div>
+      <div style={{ width: "80%", margin: "auto" }}>
         <div className="banner-text">
-          <h1 style={{marginLeft:"85px"}}>Project Page</h1>
+          <h1>Project Page</h1>
         </div>
         <div>{this.renderProjectCard()}</div>
       </div>
