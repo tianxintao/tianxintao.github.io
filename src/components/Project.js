@@ -6,7 +6,7 @@ import {
   CardActions,
   Button,
   Grid,
-  Cell
+  Cell,
 } from "react-mdl";
 import getProjectInfo from "./Util.js";
 import pdf from "../files/Resume_TianxinTao.pdf";
@@ -21,7 +21,8 @@ class project extends Component {
   renderProjectCard() {
     let project_list = getProjectInfo();
     let project_cards = project_list.map((project, key) => (
-      <ProjectCard key={key}
+      <ProjectCard
+        key={key}
         project_name={project.project_name}
         author_list={project.author_list}
         venue={project.venue}
@@ -55,18 +56,18 @@ class ProjectCard extends Component {
       venue: this.props.venue,
       render_code: this.props.render_code,
       pdf_file: this.props.pdf_file,
-      img_path: this.props.img_path
+      img_path: this.props.img_path,
     };
   }
   render() {
-    console.log(this.state.img_path)
+    console.log(this.state.img_path);
     return (
       <div
         style={{
           width: "70%",
           height: "15%",
           margin: "auto",
-          marginBottom: "2em"
+          marginBottom: "2em",
         }}
       >
         <Grid style={{ borderStyle: "dashed", margin: "10px" }}>
@@ -82,7 +83,7 @@ class ProjectCard extends Component {
               <CardTitle
                 expand
                 style={{
-                  color: "black"
+                  color: "black",
                 }}
               >
                 {this.state.project_name}
