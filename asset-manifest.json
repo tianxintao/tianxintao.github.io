@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f8935c3.chunk.css",
-    "main.js": "/static/js/main.7c7c2c19.chunk.js",
-    "main.js.map": "/static/js/main.7c7c2c19.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.31e91247.js",
-    "runtime-main.js.map": "/static/js/runtime-main.31e91247.js.map",
-    "static/css/2.559fd73f.chunk.css": "/static/css/2.559fd73f.chunk.css",
-    "static/js/2.02187474.chunk.js": "/static/js/2.02187474.chunk.js",
-    "static/js/2.02187474.chunk.js.map": "/static/js/2.02187474.chunk.js.map",
+    "main.css": "/static/css/main.e018ca0f.chunk.css",
+    "main.js": "/static/js/main.dab87388.chunk.js",
+    "main.js.map": "/static/js/main.dab87388.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83340ac7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83340ac7.js.map",
+    "static/css/2.def00553.chunk.css": "/static/css/2.def00553.chunk.css",
+    "static/js/2.47491c8b.chunk.js": "/static/js/2.47491c8b.chunk.js",
+    "static/js/2.47491c8b.chunk.js.map": "/static/js/2.47491c8b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.953196e42370c4c52da93eaa0987cf29.js": "/precache-manifest.953196e42370c4c52da93eaa0987cf29.js",
+    "precache-manifest.2b0da6d21e0e15049c276a82406afea0.js": "/precache-manifest.2b0da6d21e0e15049c276a82406afea0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.559fd73f.chunk.css.map": "/static/css/2.559fd73f.chunk.css.map",
-    "static/css/main.8f8935c3.chunk.css.map": "/static/css/main.8f8935c3.chunk.css.map",
-    "static/js/2.02187474.chunk.js.LICENSE": "/static/js/2.02187474.chunk.js.LICENSE",
+    "static/css/2.def00553.chunk.css.map": "/static/css/2.def00553.chunk.css.map",
+    "static/css/main.e018ca0f.chunk.css.map": "/static/css/main.e018ca0f.chunk.css.map",
+    "static/js/2.47491c8b.chunk.js.LICENSE.txt": "/static/js/2.47491c8b.chunk.js.LICENSE.txt",
     "static/media/ICORR_19.png": "/static/media/ICORR_19.08ca9363.png",
     "static/media/ICORR_19.pdf": "/static/media/ICORR_19.2d5b3a5f.pdf",
     "static/media/Resume_TianxinTao.pdf": "/static/media/Resume_TianxinTao.9fc0a3e1.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.31e91247.js",
-    "static/css/2.559fd73f.chunk.css",
-    "static/js/2.02187474.chunk.js",
-    "static/css/main.8f8935c3.chunk.css",
-    "static/js/main.7c7c2c19.chunk.js"
+    "static/js/runtime-main.83340ac7.js",
+    "static/css/2.def00553.chunk.css",
+    "static/js/2.47491c8b.chunk.js",
+    "static/css/main.e018ca0f.chunk.css",
+    "static/js/main.dab87388.chunk.js"
   ]
 }
