@@ -17,7 +17,7 @@ class landingpage extends Component {
           </Cell>
           <Cell col={6} className="grid-1">
             <div className="banner-text">
-              <h1>About Me(Test)</h1>
+              <h1>About Me</h1>
               <div className="intro-text">
                 <p>
                   I am a first-year Master student in{" "}

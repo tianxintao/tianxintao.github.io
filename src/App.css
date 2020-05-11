@@ -1,11 +1,22 @@
 .home-tab {
   text-decoration: none;
   color: azure;
-  font-size: 25px;
-  margin-left: none;
-  padding-left: none;
-  /* font-weight: bold; */
-  /* text-decoration: underline; */
+  font-size: 1.2vmax;
+  margin-left: 0px;
+  padding-left: 0px;
+  position: relative;
+  left: -50px;
+}
+
+.header-link{
+  position: relative;
+  top: 10px;
+  left: 0px;
+}
+
+
+.header-link p {
+  font-size: 1vmax;
 }
 
 .header-color {
@@ -22,9 +33,8 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 .drawer-color {
-  background:black; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: black; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .landing-grid {
   background: #2193b0; /* fallback for old browsers */
@@ -42,7 +52,7 @@
 
 .selfie {
   width: 80%;
-  padding-top: 7em;
+  padding-top: 6em;
 }
 
 /* .banner-text{
@@ -53,13 +63,18 @@
 } */
 
 .banner-text h1 {
-  font-size: 25px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #444;
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: -2px;
   font-weight: bold;
-  color: black;
-  text-decoration: underline;
 }
 
 .intro-text p {
+  font-family:Georgia,serif;
   padding-top: 0em;
   font-size: 20px;
   color: black;
@@ -88,5 +103,19 @@
 }
 
 .card {
-  width: 60%;
+  width: 100%;
+}
+
+.card-title {
+  color: black;
+  font-size: calc(0.5em + 0.8vw);
+  margin: none;
+  padding: none;
+}
+
+.card-text {
+  color: grey;
+  font-size: calc(0.5em + 0.5vw);
+  margin: none;
+  padding: none;
 }

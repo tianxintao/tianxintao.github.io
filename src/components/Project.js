@@ -8,38 +8,57 @@ import {
   Grid,
   Cell,
 } from "react-mdl";
-import getProjectInfo from "./Util.js";
+import Utils from "./Util.js";
 import pdf from "../files/Resume_TianxinTao.pdf";
 import "../App.css";
 
 class project extends Component {
   constructor(props) {
     super(props);
-    this.renderProjectCard = this.renderProjectCard.bind(this);
+    this.renderPublicationCard = this.renderPublicationCard.bind(this);
+  }
+
+  renderPublicationCard() {
+    let Publication_list = Utils.getPublicationInfo();
+    let Publication_cards = Publication_list.map((Publication, key) => (
+      <ProjectCard
+        key={key}
+        project_name={Publication.project_name}
+        author_list={Publication.author_list}
+        venue={Publication.venue}
+        pdf_file={Publication.pdf_file}
+        img_source={Publication.img_source}
+        render_code={Publication.render_code}
+      />
+    ));
+    return Publication_cards;
   }
 
   renderProjectCard() {
-    let project_list = getProjectInfo();
-    let project_cards = project_list.map((project, key) => (
+    let Publication_list = Utils.getProjectInfo();
+    let Publication_cards = Publication_list.map((Publication, key) => (
       <ProjectCard
         key={key}
-        project_name={project.project_name}
-        author_list={project.author_list}
-        venue={project.venue}
-        pdf_file={project.pdf_file}
-        img_path={project.img_path}
-        render_code={project.render_code}
+        project_name={Publication.project_name}
+        author_list={Publication.author_list}
+        venue={Publication.venue}
+        pdf_file={Publication.pdf_file}
+        img_source={Publication.img_source}
+        render_code={Publication.render_code}
       />
     ));
-    return project_cards;
+    return Publication_cards;
   }
 
   render() {
-    this.renderProjectCard();
     return (
       <div style={{ width: "80%", margin: "auto" }}>
         <div className="banner-text">
-          <h1>Project Page</h1>
+          <h1>Publication</h1>
+        </div>
+        <div>{this.renderPublicationCard()}</div>
+        <div className="banner-text">
+          <h1>Project</h1>
         </div>
         <div>{this.renderProjectCard()}</div>
       </div>
@@ -56,16 +75,15 @@ class ProjectCard extends Component {
       venue: this.props.venue,
       render_code: this.props.render_code,
       pdf_file: this.props.pdf_file,
-      img_path: this.props.img_path,
+      img_source: this.props.img_source,
     };
   }
   render() {
-    console.log(this.state.img_path);
     return (
       <div
         style={{
-          width: "70%",
-          height: "15%",
+          width: "100%",
+          height: "5%",
           margin: "auto",
           marginBottom: "2em",
         }}
@@ -75,21 +93,20 @@ class ProjectCard extends Component {
             <img
               style={{ width: "100%" }}
               alt="project_img"
-              src={require("../figs/ICORR_19.png")}
+              src={this.state.img_source}
             ></img>
           </Cell>
           <Cell col={9}>
             <Card style={{ width: "100%" }} shadow={1}>
-              <CardTitle
-                expand
-                style={{
-                  color: "black",
-                }}
-              >
-                {this.state.project_name}
+              <CardTitle expand>
+                <div className="card-title">
+                  {this.state.project_name}
+                </div>
               </CardTitle>
-              <CardText>{this.state.author_list}</CardText>
-              <CardText>{this.state.venue}</CardText>
+              {this.state.author_list != null &&
+                <CardText><div className="card-text">{this.state.author_list}</div></CardText>
+                }
+              <CardText><div className="card-text">{this.state.venue}</div></CardText>
               <CardActions border>
                 <Button href={this.state.pdf_file} colored>
                   PDF
@@ -99,8 +116,8 @@ class ProjectCard extends Component {
                     code
                   </Button>
                 ) : (
-                  ""
-                )}
+                    ""
+                  )}
               </CardActions>
             </Card>
           </Cell>

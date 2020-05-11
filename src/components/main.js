@@ -1,9 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import landingpage from "./Landingpage";
-// import Contact from "./Contact";
 import project from "./Project";
-// import resume from "./Resume";
 
 const Main = () => (
   <Switch>
